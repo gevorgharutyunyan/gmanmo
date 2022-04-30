@@ -1,0 +1,86 @@
+#table-body{
+    background-color: #ABD1C9FF;
+    font-family: 'Nunito', sans-serif;
+}
+table{
+    background-color:#97B3D0FF;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+th {
+    background-color:#DBB04AFF;
+    Color:white;
+}
+th, td {
+    width:150px;
+    text-align:center;
+    border:1px #8AA192;
+    padding:.21px
+}
+tr{
+   padding:5px
+}
+form {
+    text-align : center;
+}
+#spent-table tr:hover {
+    background-color: #DBB04AFF;
+}
+#spent-table th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #ABD1C9FF;
+  color: white;
+}
+#options{
+    background-color: #ABD1C9FF;
+    color: #FFFFFF;
+}
+#add-link{
+    position: fixed;
+    color : #AD846F;
+    text-decoration: none;
+    font-size : 55px;
+    text-shadow:1px 1px #11413b;
+}
+.task-items-wrapper{
+    margin-top: 0;
+}
+.delete-link {
+    background-color: #DC143C;
+    padding: 2px 14px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+}
+.delete-link:hover {
+    background-color:#EB003B;
+    color: #FFFFFF;
+}
+.edit-link {
+    background-color:#50C878;
+    padding: 2px 14px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+}
+.edit-link:hover {
+    background-color:#2cc11a;
+    color: #FFFFFF;
+}
+
+#add-div{
+    position: fixed;
+    top: 50px;
+    left:49%;
+    color : #AD846F;
+    text-shadow:1px 1px #11413b;
+}
+#drop-header:hover{
+    background-color: #97B3D0FF;
+    color: #FFFFFF;
+}

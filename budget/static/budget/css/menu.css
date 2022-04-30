@@ -1,0 +1,20 @@
+#main-menu{
+    background-color: #ABD1C9FF;
+    font-family: 'Nunito', sans-serif;
+}
+.container {
+  margin-top:100px;
+  justify-content: center;
+  background-color: #ABD1C9FF;
+  display: flex;
+}
+
+.menu-btn{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+  margin: 20px;
+  background-color: #8AA192;
+  width: 400px;
+  height: 250px;
+}

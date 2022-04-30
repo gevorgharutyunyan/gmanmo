@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistic</title>
+</head>
+<body id="stat-body">
+{% extends 'budget/base.html' %}
+{% block content %}
+
+<div id="container">
+<h3 style="text-align:center">For last day - {{ daily }} AMD</h3>
+<div class="month-item-wrapper">
+    <h3 style="text-align:center">Here are shown whether how much have been spent for each item.</h3>
+    <table id="stat-table">
+        <tr>
+            <th style="text-align:center">Month</th>
+            {% for cols in stat_headers %}
+                    <th style="text-align:center">{{cols}}</th>
+            {% endfor %}
+        </tr>
+
+    {% for month_name, sum in monthly_sum.items %}
+        <tr>
+            <td><strong>{{ month_name }}</strong></td>
+            {% for md_field, sum_val in sum.items %}
+                {% if sum_val == None %}
+                    {% with sum_val=0 %}
+                        <td>{{ sum_val }}</td>
+                    {% endwith %}
+                {% else %}
+                    <td style="text-align:center"><strong>{{ sum_val }}</strong></td>
+                {% endif %}
+            {% endfor %}
+
+        </tr>
+    {% endfor %}
+    </table>
+</div>
+<div class="month-total-wrapper">
+    <h3 style="text-align:center">In this table are shown amount of spent money during each month. </h3>
+    <table id="total-month-spent">
+         <thead>
+            <tr id="sp-id-th">
+                <td colspan="2" style="text-align:center" id="sp-id-td"><h4 style="color: #ffffff;"><strong> Monthly spent</strong></h4></td>
+            </tr>
+         </thead>
+        {% for month, amount in spent_amount.items%}
+                <tr>
+                    {% if amount != '' %}
+                    <td>
+                        <h4><strong>{{ month }}</strong></h4>
+                    </td>
+                    <td>
+                        <h4><strong>{{ amount }}</strong></h4>
+                    </td>
+                    {% endif %}
+                </tr>
+
+    {% endfor %}
+    </table>
+</div>
+</div>
+{% endblock content %}
+</body>
+</html>

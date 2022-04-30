@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body id="reg-body">
+{% extends 'budget/base.html' %}
+{% block title %}Register Page{% endblock title %}
+{% block content %}
+<div class="reg-page">
+    <form method="post" id="reg-form">
+        {% csrf_token %}
+        <div id="usname" class="reg-box">
+            <label class="reg-label"> Username : </label>
+            {{ form.username }}
+        </div>
+        <div id="pass1" class="reg-box">
+            <label class="reg-label"> Password : </label>
+            {{ form.password1 }}
+        </div>
+        <div id="pass2" class="reg-box">
+            <label class="reg-label"> Repeat password : </label>
+            {{ form.password2 }}
+        </div>
+
+
+    </form>
+    <div id="reg-btn-div" class="reg-box">
+            <button type="submit" id="reg-btn">Register</button>
+            <a href="{% url 'login' %}"><button id="log">Log In</button></a>
+    </div>
+</div>
+{% endblock content %}
+
+</body>
+</html>

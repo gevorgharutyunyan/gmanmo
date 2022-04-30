@@ -1,0 +1,47 @@
+#spent-create-body{
+    background-color: #ABD1C9FF;
+}
+.spent-card{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #97B3D0FF;
+  border-radius: 30px;
+}
+input[type=text] {
+  background-color: #97B3D0FF;
+  color: white;
+  font-size: 170%;
+  border-radius: 20px;
+  height: 40px;
+  width:310px;
+  box-sizing: border-box;
+  text-align: center;
+}
+input[type=text]:hover{
+  background-color:#DBB04AFF;
+}
+input[type=number] {
+  background-color: #97B3D0FF;
+  color: white;
+  font-size: 170%;
+  border-radius: 20px;
+  height: 40px;
+  width:310px;
+  box-sizing: border-box;
+  text-align: center;
+}
+input[type=number]:hover{
+  background-color:#DBB04AFF;
+}
+#create-form label{
+  font-size: 170%;
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+#submit{
+   font-size: 170%;
+    border-radius: 20px;
+}

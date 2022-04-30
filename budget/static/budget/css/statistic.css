@@ -1,0 +1,62 @@
+#stat-body{
+    background-color: #ABD1C9FF;
+    font-family: 'Nunito', sans-serif;
+}
+
+#stat-table {
+    background-color:#97B3D0FF;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#total-month-spent {
+    background-color:#97B3D0FF;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+#stat-table th{
+    background-color:#ABD1C9FF;
+    Color:white;
+}
+
+#stat-table th, td {
+    width:150px;
+    text-align:center;
+    border:1px #8AA192;
+    padding:.21px
+}
+#total-month-spent th, td {
+    width:150px;
+    text-align:center;
+    border:1px #8AA192;
+    padding:.21px
+}
+
+#stat-table th:hover {
+    background-color: #97B3D0FF;
+}
+#sp-id-th :hover {
+    background-color: #97B3D0FF;
+}
+#stat-table td:hover {
+    background-color: #DBB04AFF;
+}
+#total-month-spent tr:hover {
+    background-color: #DBB04AFF;
+}
+
+#stat-table th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+  background-color: #ABD1C9FF;
+  color: white;
+}
+#sp-id-td{
+  background-color: #ABD1C9FF;
+}
+#sp-id:hover{
+  background-color: #DBB04AFF;
+}

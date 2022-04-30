@@ -1,0 +1,36 @@
+#delete-body{
+    background-color: #ABD1C9FF;
+    font-family: 'Nunito', sans-serif;
+}
+
+.delete-div{
+   margin: auto;
+   display: block;
+   padding: 1rem 1rem;
+   justify-content: center;
+   vertical-align: middle;
+   background-color: #97B3D0FF;
+   position:absolute;
+   border-radius: 15px;
+    color: #FFFFFF;
+}
+.delete-btn{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 22%;
+  background-color: #ABD1C9FF;
+  width: 200px;
+  height: 70px;
+  border-radius: 15px;
+}
+#delete-btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+#delete-btn:hover{
+    background-color: #EB003B;
+
+}

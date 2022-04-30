@@ -1,0 +1,33 @@
+.top-nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+.top-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#log-out{
+  alignment: right;
+}
+
+.top-nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.right-nav-link{
+  float: right;
+}
+
+.top-nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}

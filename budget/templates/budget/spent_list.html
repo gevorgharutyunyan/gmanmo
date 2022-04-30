@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monthly Spent List</title>
+</head>
+<body id="table-body">
+{% extends 'budget/base.html' %}
+{% block content %}
+<p>{{ row.food}}</p>
+
+
+<div id="add-div">
+    <a id="add-link" href=" {% url 'spent-create'%}">&#x2b;</a>
+</div>
+<!--<button onclick="showTable()">Show</button>-->
+<!--<button onclick="hideTable()">Hide</button>-->
+<div class="task-items-wrapper" id="tablediv">
+        {% for month_name, month_obj in month_spent.items %}
+            {% if month_obj %}
+            <table id="spent-table" >
+                    <thead>
+                    <tr>
+                        <td colspan="15" style="text-align:center"><strong><h3 style="color: #11413b;">{{ month_name }}</h3></strong></td>
+                    </tr>
+                    <tr>
+                        {% for cols in header %}
+                        <th id="drop-header">
+                            <h4>{{cols}}</h4>
+                        </th>
+                        {% endfor %}
+                        <td colspan="2" id="options">
+                            <h4>Options</h4>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in month_obj %}
+                            <tr>
+                                <td><strong>{{item.date}}</strong></td>
+                                <td><strong>{{item.food}}</strong></td>
+                                <td><strong>{{item.household_things}}</strong></td>
+                                <td><strong>{{item.transport}}</strong></td>
+                                <td><strong>{{item.medicine}}</strong></td>
+                                <td><strong>{{item.cloths}}</strong></td>
+                                <td><strong>{{item.guest}}</strong></td>
+                                <td><strong>{{item.utility}}</strong></td>
+                                <td><strong>{{item.other}}</strong></td>
+                                <td><strong>{{item.lunch}}</strong></td>
+                                <td><strong>{{item.entertainment}}</strong></td>
+                                <td><strong>{{item.care}}</strong></td>
+                                <td>
+                                    <a class="edit-link" href="{% url 'spent-update' item.id %}">&#x2710;</a></td>
+                                    <td><a class="delete-link" href="{% url 'spent-delete' item.id %}">&#x2718;</a>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+            </table>
+            {% endif  %}
+        {% endfor %}
+
+</div>
+<div class="top-nav">
+  <a href="{% url 'main-menu' %}">Home</a>
+  <a href="">News</a>
+  <a href="">Contact</a>
+  <a href="">About</a>
+  <div class="right-nav-link">
+    <a href="{% url 'logout' %}" id="log-out">Logout</a>
+  </div>
+</div>
+{% endblock content %}
+</body>
+</html>

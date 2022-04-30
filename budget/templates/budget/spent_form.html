@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a spent</title>
+</head>
+<body id="spent-create-body">
+{% extends 'budget/base.html' %}
+{% block content %}
+<div class="spent-card">
+    <form id="create-form" method="post" action="" >
+        {%csrf_token%}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Submit" id="submit"/>
+    </form>
+</div>
+{% endblock content %}
+</body>
+</html>

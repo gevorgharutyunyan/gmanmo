@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/login.css' %}">
+    <title>Login page</title>
+</head>
+<body id="login">
+{% block content %}
+
+<div class="parent-login">
+<div class="css-typing">
+        <h1 class="headtext" id="text1">Never spend your money before you have it </h1>
+        <h1 class="headtext" id="text2">The best thing money can buy is financial freedom.</h1>
+        <h1 class="headtext" id="text3">Balancing your money is the key to having enough.</h1>
+</div>
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Login" id="log-btn">
+    </form>
+    <p>Don't have an account?<a href="{% url 'register' %}" id="reg-id" > <button> Register</button></a></p>
+</div>
+</div>
+
+{% endblock content %}
+</body>
+</html>

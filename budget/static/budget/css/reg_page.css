@@ -1,0 +1,55 @@
+#reg-body{
+    background-color: #ABD1C9FF;
+    font-family: 'Nunito', sans-serif;
+}
+.reg-page{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 300px;
+  border-radius: 15px;
+  alignment: center;
+  background-color: #DFDCE5FF;
+}
+#reg-form input[type=text]{
+  background-color: #97B3D0FF;
+  color: white;
+  font-size: 170%;
+  border-radius: 20px;
+  height: 40px;
+  width:310px;
+  box-sizing: border-box;
+  text-align: center;
+    margin: 20px;
+}
+input[type=password],
+input[type=password]{
+  background-color: #97B3D0FF;
+  color: white;
+  font-size: 170%;
+  border-radius: 20px;
+  height: 40px;
+  width:310px;
+  box-sizing: border-box;
+  text-align: center;
+    margin: 20px;
+}
+
+.reg-box {
+  height: 50px;
+  width: 100%;
+}
+.reg-label{
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+}
+#reg-btn, #log{
+    margin-top:20%;
+    float: bottom;
+    font-size :20px;
+    background-color: #ABD1C9FF;
+}

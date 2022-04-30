@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/nav_bar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/table.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/statistic.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/spent_create.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/delete_confirmation.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'budget/css/reg_page.css' %}">
+    <script type="text/javascript" src="{% static 'budget/js/hide_table.js' %}"></script>
+    <title>Monthly Spent List</title>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
