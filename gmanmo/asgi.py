@@ -1,5 +1,5 @@
 """
-ASGI config for money_manager project.
+ASGI config for gmanmo project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'money_manager.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gmanmo.settings')
 
 application = get_asgi_application()
