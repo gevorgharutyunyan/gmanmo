@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Monthly Spent List</title>
+
 </head>
 <body id="table-body">
 {% extends 'budget/base.html' %}
@@ -63,8 +64,8 @@
 </div>
 <div class="top-nav">
   <a href="{% url 'main-menu' %}">Home</a>
-  <a href="">News</a>
-  <a href="">Contact</a>
+  <a href="https://rate.am/" target="_blank">Currency</a>
+  <a href="{% url 'calc' %}">Calculator</a>
   <a href="">About</a>
   <div class="right-nav-link">
     <a href="{% url 'logout' %}" id="log-out">Logout</a>
