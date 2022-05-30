@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Monthly Spent List</title>
-
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body id="table-body">
 {% extends 'budget/base.html' %}
 {% block content %}
 <p>{{ row.food}}</p>
 
-
 <div id="add-div">
     <a id="add-link" href=" {% url 'spent-create'%}">&#x2b;</a>
 </div>
+<div id="to-bottom-div">
+    <a id="scrollToBottom">&#x25BC;</a>
+</div>
+<div id="to-top-div">
+    <a  id="scrollToTop">&#x25B2;</a>
+</div>
+
+
 <!--<button onclick="showTable()">Show</button>-->
 <!--<button onclick="hideTable()">Hide</button>-->
 <div class="task-items-wrapper" id="tablediv">

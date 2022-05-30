@@ -40,7 +40,7 @@ form {
 }
 #add-link{
     position: fixed;
-    color : #AD846F;
+    color : #0090CB;
     text-decoration: none;
     font-size : 55px;
     text-shadow:1px 1px #11413b;
@@ -77,10 +77,33 @@ form {
     position: fixed;
     top: 50px;
     left:49%;
-    color : #AD846F;
     text-shadow:1px 1px #11413b;
 }
 #drop-header:hover{
     background-color: #97B3D0FF;
     color: #FFFFFF;
+}
+#to-bottom-div{
+    position: fixed;
+    top: 60px;
+    left:96.85%;
+}
+#to-top-div{
+    position: fixed;
+    bottom: 20px;
+    left:96.85%;
+}
+
+#scrollToTop, #scrollToBottom
+{
+     cursor:pointer;
+     background-color:#0090CB;
+     display:inline-block;
+     height:30px;
+     width:40px;
+     color:#fff;
+     font-size:16pt;
+     text-align:center;
+     text-decoration:none;
+     line-height:40px;
 }
