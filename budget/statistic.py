@@ -1,5 +1,5 @@
 import datetime
-
+from datetime import timedelta
 from django.db.models import Sum
 from budget.utils import monthly_spent_dict
 from budget.models import Spent
@@ -24,8 +24,12 @@ class Statistics:
         last_spent = []
         for tb_fld in fields:
             today = datetime.datetime.now().strftime('%Y-%m-%d')
-            last_day = Spent.objects.all().filter(date=today).values_list(tb_fld)[0][0]
-            last_spent.append(last_day)
+            yesterday = (datetime.datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+            #last_day = Spent.objects.all().filter(date=today).values_list(tb_fld)[0][0]
+            print(Spent.objects.all().filter(date=today).values_list(tb_fld)[0][0])
+            yesterday_day = Spent.objects.all().filter(date=yesterday).values_list(tb_fld)[0][0]
+            last_spent.append(yesterday_day)
+
         last_day_sum = sum(last_spent[1:])
         return last_day_sum
 
